@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jaqueta.css">
+    <title>Stray</title>
+</head>
+<body>
+    
+    <nav>
+
+        <header class="site-header">
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="Ativo 1.png" alt="Logo Stray">
+    </a>
+  </div>
+</header>
+
+        <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="produtos.html"> Produtos </a> </li>
+			<li> <a href="conta.html"> Conta </a> </li>
+            <li> <a href="contactos.html"> Contactos </a> </li>
+        </ul>
+    </nav>
+
+  <div class="produto-container">
+    <div class="produto-imagem">
+      <img src="saia1.png" alt="Camisola Punk">
+    </div>
+
+    <div class="produto-info">
+      <h1>Saia Rebel&nbsp;</h1>
+
+	
+      <p class="preco">7.99€</p>
+
+     <label for="tamanho">Tamanho:</label>
+<select id="tamanho" name="tamanho">
+  <option value="XS">XS</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+<label for="quantidade">Quantidade:</label>
+<input type="number" id="quantidade" name="quantidade" value="1" min="1" max="99">
+<div style="flex-basis: 100%; height: 0;"></div>
+<br>
+<button class="botao-comprar" onclick="comprar()">Comprar agora</button>
+		
+		
+	  <div style="flex-basis: 100%; height: 0;"></div>
+	  <h3>&nbsp;</h3>
+		  <h3>composição:</h3>
+<p> <br>
+          65% poliéster&nbsp;</p>
+      <p>&nbsp;35% algodão</p>
+      <p>&nbsp;Fecho lateral invisível&nbsp;</p>
+        <p>&nbsp;Tecido leve, com bom caimento e resistência<br>
+        </p>
+    </div>
+  </div>
+
+<script>
+    function comprar() {
+      const tamanho = document.getElementById("tamanho").value;
+      alert("Adicionado ao carrinho (Tamanho: " + tamanho + ")");
+    }
+  </script>
+
+</body>
+</html>
+
+<section class="recomendacoes">
+  <h2>Também podes gostar de:</h2>
+  <div class="carrossel">
+    
+    <!-- Produto recomendado 1 -->
+    <div class="item-recomendado">
+      <a href="produto2.html">
+        <img src="saia2.png" alt="Saia lawlessness">
+        <p>Saia lawlessness</p>
+      </a>
+    </div>
+
+    <!-- Produto recomendado 2 -->
+    <div class="item-recomendado">
+      <a href="produto3.html">
+        <img src="saia3.png" alt="Saia Chaos">
+        <p>Saia Chaos</p>
+      </a>
+    </div>
+
+    <!-- Produto recomendado 3 -->
+    <div class="item-recomendado">
+      <a href="produto4.html">
+        <img src="saia4.png" alt="Saia Flames">
+        <p>Saia Flames</p>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="footer-stray">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Stray</h3>
+      <p>Trabalho realizado em âmbito escolar.</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Segue-nos</h4>
+      <p>
+        <a href="#">Instagram</a> |
+        <a href="#">Facebook</a> |
+		  <a href="#">Tiktok</a> |
+	    <a href="#">Pinterest</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Stray. Todos os direitos reservados.
+  </div>
+</footer>
